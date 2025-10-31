@@ -1,26 +1,38 @@
-// Theme toggle
-const toggle = document.getElementById('theme-toggle');
-toggle?.addEventListener('click', () => {
-  document.body.classList.toggle('light');
-  toggle.textContent = document.body.classList.contains('light') ? '☀️' : '🌙';
-});
-
-// Load header and footer dynamically
-async function loadComponent(id, file) {
-  const el = document.getElementById(id);
-  if (el) {
-    const res = await fetch(`includes/${file}`);
-    el.innerHTML = await res.text();
+// load includes (header/footer)
+async function loadInclude(id, path) {
+  const el = document.getElementById(id + '-placeholder');
+  if (!el) return;
+  try {
+    const res = await fetch('/includes/' + path);
+    const txt = await res.text();
+    el.innerHTML = txt;
+    // after header loads, attach theme toggle handler if present
+    const themeBtn = document.getElementById('theme-toggle');
+    if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
+  } catch (e) {
+    console.error('Include load failed', id, e);
   }
 }
+loadInclude('header', 'header.html');
+loadInclude('footer', 'footer.html');
 
-loadComponent('header', 'header.html');
-loadComponent('footer', 'footer.html');
+// theme toggle with localStorage
+function setTheme(t) {
+  if (t === 'light') document.body.classList.add('light');
+  else document.body.classList.remove('light');
+  localStorage.setItem('fv_theme', t);
+}
+function toggleTheme() {
+  const current = localStorage.getItem('fv_theme') || 'dark';
+  setTheme(current === 'dark' ? 'light' : 'dark');
+}
+// init theme
+const saved = localStorage.getItem('fv_theme') || 'dark';
+setTheme(saved);
 
-document.getElementById('light-toggle').addEventListener('click', () => {
-  document.body.style.filter = 'brightness(1.2)';
-});
-
-document.getElementById('dark-toggle').addEventListener('click', () => {
-  document.body.style.filter = 'brightness(0.7)';
+// fade-in already applied via page-enter; add fade-out on internal nav
+document.addEventListener('DOMContentLoaded', () => {
+  // ensure page-enter is present (for direct loads)
+  const page = document.getElementById('page');
+  if (page) page.classList.add('page-enter');
 });

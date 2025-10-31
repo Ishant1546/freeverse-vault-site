@@ -1,46 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - Freeverse Vault</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/main.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Freeverse Vault - Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="https://kit.fontawesome.com/a2e0e6c27f.js" crossorigin="anonymous"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/nav-fade.js"></script>
 </head>
 <body>
-  <header id="header"></header>
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="videos/blue-lake.mp4" type="video/mp4">
+  </video>
 
-  <main class="container">
-    <h2 class="page-title">Our Services</h2>
+  <div id="header-placeholder"></div>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Custom Minecraft Setups</h3>
-        <p>High-quality MC setups and plugins ready to deploy instantly.</p>
-      </div>
+  <main id="page" class="page page-enter container">
+    <h2 class="page-title">Services We Offer</h2>
 
-      <div class="card">
+    <div class="service-grid">
+      <!-- Example service card (duplicate to add more) -->
+      <article class="service-card">
+        <i class="fas fa-box-open fa-2x"></i>
+        <h3>Free Giveaways</h3>
+        <p>Maps, configs, premium accounts & more — free drops weekly.</p>
+      </article>
+
+      <article class="service-card">
+        <i class="fas fa-gamepad fa-2x"></i>
         <h3>Game Accounts</h3>
-        <p>Free & premium verified game accounts from trusted sources.</p>
-      </div>
+        <p>Verified Minecraft, Steam, Epic keys and accounts.</p>
+      </article>
 
-      <div class="card">
-        <h3>Discord Templates</h3>
-        <p>Professional server templates for gaming, community, and support servers.</p>
-      </div>
+      <article class="service-card">
+        <i class="fas fa-server fa-2x"></i>
+        <h3>Minecraft Setups</h3>
+        <p>Preconfigured server packs, worlds, plugins & installs.</p>
+      </article>
 
-      <div class="card">
-        <h3>Cheap Domains</h3>
-        <p>Affordable domains with fast setup and free DNS management.</p>
-      </div>
+      <article class="service-card">
+        <i class="fas fa-code fa-2x"></i>
+        <h3>Plugins, Scripts & Bots</h3>
+        <p>Useful server plugins, bot scripts, and starter templates.</p>
+      </article>
 
-      <div class="card">
-        <h3>Exclusive Giveaways</h3>
-        <p>Join frequent giveaways and claim rewards easily.</p>
-      </div>
+      <article class="service-card">
+        <i class="fas fa-cubes fa-2x"></i>
+        <h3>Models & Assets</h3>
+        <p>3D models, textures, and art assets for creators.</p>
+      </article>
+
+      <article class="service-card">
+        <i class="fas fa-tools fa-2x"></i>
+        <h3>Custom Setup Requests</h3>
+        <p>Need a tailored server? Request from staff in Discord.</p>
+      </article>
     </div>
   </main>
 
-  <footer id="footer"></footer>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

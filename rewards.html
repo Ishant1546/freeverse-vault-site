@@ -1,35 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rewards - Freeverse Vault</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/main.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Freeverse Vault - Rewards</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="https://kit.fontawesome.com/a2e0e6c27f.js" crossorigin="anonymous"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/nav-fade.js"></script>
 </head>
 <body>
-  <header id="header"></header>
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="videos/blue-lake.mp4" type="video/mp4">
+  </video>
 
-  <main class="container">
+  <div id="header-placeholder"></div>
+
+  <main id="page" class="page page-enter container">
     <h2 class="page-title">Invite Rewards</h2>
-    <p>Invite friends and earn free access, premium perks, and giveaways!</p>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Invite 5 Friends</h3>
-        <p>Unlock “Member+” role and early access to new freebies.</p>
+    <div class="rewards-grid">
+      <div class="reward-card">
+        <h3>3 Invites</h3>
+        <p>2× Mcfa [Temp]</p>
       </div>
-      <div class="card">
-        <h3>Invite 15 Friends</h3>
-        <p>Get premium content and exclusive giveaways.</p>
+      <div class="reward-card">
+        <h3>7 Invites</h3>
+        <p>4× Mcfa [Temp]</p>
       </div>
-      <div class="card">
-        <h3>Invite 30+ Friends</h3>
-        <p>Claim lifetime premium and Discord server spotlight role.</p>
+      <div class="reward-card">
+        <h3>9 Invites</h3>
+        <p>Mcfa Lifetime</p>
+      </div>
+      <div class="reward-card">
+        <h3>40 Invites</h3>
+        <p>Custom Server Setup</p>
       </div>
     </div>
   </main>
 
-  <footer id="footer"></footer>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

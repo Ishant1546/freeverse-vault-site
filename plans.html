@@ -1,33 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plans - Freeverse Vault</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/main.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Freeverse Vault - Plans</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="https://kit.fontawesome.com/a2e0e6c27f.js" crossorigin="anonymous"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/nav-fade.js"></script>
 </head>
 <body>
-  <header id="header"></header>
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="videos/blue-lake.mp4" type="video/mp4">
+  </video>
 
-  <main class="container">
-    <h2 class="page-title">Plans & Perks</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Free Access</h3>
-        <p>Enjoy access to free resources, tools, and community giveaways.</p>
+  <div id="header-placeholder"></div>
+
+  <main id="page" class="page page-enter container">
+    <h2 class="page-title">Server & Bot Hosting Plans</h2>
+
+    <section class="plans-grid">
+      <div class="plan-card">
+        <h3>Starter (Low Node)</h3>
+        <p class="price">250K OwO / 15 Invites</p>
+        <ul>
+          <li>2 GB RAM • 5 GB SSD • 50% Shared CPU</li>
+          <li>Basic DDoS Protection</li>
+          <li>24/7 (Subject to Node)</li>
+        </ul>
       </div>
-      <div class="card">
-        <h3>Premium Access</h3>
-        <p>Unlock exclusive maps, setups, configs, and early content drops.</p>
+
+      <div class="plan-card">
+        <h3>Advanced (Low Node)</h3>
+        <p class="price">550K OwO / 25 Invites</p>
+        <ul>
+          <li>4 GB RAM • 10 GB SSD • 75% Shared CPU</li>
+          <li>Premium DDoS</li>
+          <li>Free Subdomain</li>
+        </ul>
       </div>
-      <div class="card">
-        <h3>Partner Program</h3>
-        <p>Earn rewards by inviting others and growing the community.</p>
+
+      <div class="plan-card">
+        <h3>Pro (India Node)</h3>
+        <p class="price">₹199 Lifetime</p>
+        <ul>
+          <li>6 GB RAM • 15 GB SSD • 1 vCore</li>
+          <li>Subdomain + SSL</li>
+          <li>24/7 Guaranteed</li>
+        </ul>
       </div>
-    </div>
+
+      <div class="plan-card">
+        <h3>Elite (India Node)</h3>
+        <p class="price">₹399 Lifetime</p>
+        <ul>
+          <li>8 GB RAM • 20 GB SSD • 2 vCore</li>
+          <li>Free Domain + Priority Support</li>
+          <li>24/7 Guaranteed</li>
+        </ul>
+      </div>
+    </section>
   </main>
 
-  <footer id="footer"></footer>
+  <div id="footer-placeholder"></div>
 </body>
 </html>
