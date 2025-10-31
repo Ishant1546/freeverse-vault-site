@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +6,9 @@
 }
 
 body {
-  color: #fff;
+  color: white;
   text-align: center;
   overflow-x: hidden;
-  transition: 0.3s;
 }
 
 #bg-video {
@@ -22,88 +19,66 @@ body {
   min-height: 100%;
   z-index: -1;
   object-fit: cover;
-  filter: brightness(0.6);
 }
 
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 15px 30px;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(8px);
 }
 
-.logo {
+h1 {
   font-size: 1.8rem;
+  letter-spacing: 1px;
   color: #00ffff;
-  font-weight: 700;
 }
 
 .toggle-buttons button {
   background: none;
   border: none;
-  color: #fff;
-  font-size: 1.3rem;
+  color: white;
+  font-size: 1.2rem;
   margin-left: 10px;
   cursor: pointer;
-  transition: 0.2s;
 }
 
-.toggle-buttons button:hover {
-  color: #00ffff;
-}
-
-/* Intro */
 .intro {
-  margin: 100px 20px 50px;
-  animation: fadeIn 1.5s ease;
+  margin: 80px 20px;
 }
 
 .intro h2 {
   font-size: 2rem;
   color: #00ffcc;
-  margin-bottom: 10px;
 }
 
-.intro p {
-  font-size: 1.1rem;
-  color: #e6e6e6;
-}
-
-/* Services */
 .services {
-  background: rgba(0, 0, 0, 0.55);
-  margin: 40px auto;
-  padding: 50px 20px;
-  border-radius: 12px;
-  max-width: 1100px;
-}
-
-.services h2 {
-  font-size: 2rem;
-  color: #00ffff;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 50px auto;
+  padding: 40px 20px;
+  border-radius: 10px;
+  max-width: 1000px;
 }
 
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  gap: 25px;
+  margin-top: 30px;
 }
 
 .service-card {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  padding: 25px;
+  padding: 20px;
   transition: 0.3s;
 }
 
 .service-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 15px #00ffff40;
 }
 
 .service-card i {
@@ -112,35 +87,21 @@ header {
   margin-bottom: 15px;
 }
 
-/* Footer */
 footer {
-  padding: 40px;
-  background: rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 40px;
 }
 
 .dc-link {
   display: inline-block;
   color: #5865f2;
   text-decoration: none;
-  font-weight: 600;
-  margin-top: 12px;
+  font-weight: bold;
+  margin-top: 10px;
   font-size: 1.1rem;
-  transition: 0.2s;
 }
 
 .dc-link:hover {
   text-decoration: underline;
-  color: #7289da;
-}
-
-.copy {
-  margin-top: 15px;
-  font-size: 0.9rem;
-  color: #aaa;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
 }
