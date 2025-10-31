@@ -1,47 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Freeverse Vault - Home</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script defer src="https://kit.fontawesome.com/a2e0e6c27f.js" crossorigin="anonymous"></script>
-  <script defer src="js/main.js"></script>
-  <script defer src="js/nav-fade.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freeverse Vault Services</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <!-- video bg -->
-  <video id="bg-video" autoplay muted loop playsinline>
-    <source src="videos/blue-lake.mp4" type="video/mp4">
-  </video>
-
-  <!-- header (loaded dynamically) -->
-  <div id="header-placeholder"></div>
-
-  <!-- page content (wrapped for transitions) -->
-  <main id="page" class="page page-enter">
-    <section class="hero container">
-      <div class="hero-left">
-        <h1 class="title-glow">Freeverse Vault</h1>
-        <p class="subtitle">Best Free Stuff Shop — maps, accounts, plugins, templates & more.</p>
-        <div class="hero-cta">
-          <a class="btn" href="services.html">Explore Services</a>
-          <a class="btn ghost" href="rewards.html">Invite Rewards</a>
-        </div>
-      </div>
-      <div class="hero-right">
-        <!-- small feature list -->
-        <ul class="features">
-          <li><i class="fas fa-gift"></i> Weekly Giveaways</li>
-          <li><i class="fas fa-server"></i> Ready Minecraft Setups</li>
-          <li><i class="fas fa-discord"></i> Discord Support & Drops</li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <!-- footer (loaded dynamically) -->
-  <div id="footer-placeholder"></div>
+  <div class="fade-container">
+    <div id="header"></div>
+    <main id="content"></main>
+    <div id="footer"></div>
+  </div>
 </body>
 </html>
-

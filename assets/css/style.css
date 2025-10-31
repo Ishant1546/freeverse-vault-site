@@ -1,0 +1,127 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("../../images/background.png") center center / cover no-repeat fixed;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Fade Animation */
+.fade-container {
+  opacity: 0;
+  animation: fadeIn 0.9s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00bcd4;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* Sections */
+section {
+  padding: 70px 40px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #00bcd4;
+  margin-bottom: 15px;
+}
+
+.service {
+  background: rgba(0, 0, 0, 0.55);
+  margin: 25px auto;
+  padding: 25px;
+  border-radius: 14px;
+  max-width: 700px;
+  box-shadow: 0 0 18px rgba(0, 188, 212, 0.25);
+  transition: 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.4);
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+footer img {
+  width: 28px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+footer a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 8px;
+}
+
+/* Smooth Fade Between Pages */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
