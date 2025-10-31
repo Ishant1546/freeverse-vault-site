@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Freeverse Vault Services</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/main.js" defer></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/a2e0e6c27f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header id="header"></header>
+  <video autoplay muted loop id="bg-video">
+    <source src="videos/blue-lake.mp4" type="video/mp4">
+  </video>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Welcome To Freeverse Vault</h1>
-      <p>Your one-stop destination for Free & Premium Services.</p>
-      <a href="services.html" class="btn">Explore Services</a>
-    </section>
-  </main>
+  <header>
+    <h1>Freeverse Vault</h1>
+    <div class="toggle-buttons">
+      <button id="light-toggle"><i class="fas fa-sun"></i></button>
+      <button id="dark-toggle"><i class="fas fa-moon"></i></button>
+    </div>
+  </header>
 
-  <footer id="footer"></footer>
+  <section class="intro">
+    <h2>Best Free Stuff Shop & Services</h2>
+    <p>Explore premium giveaways, Minecraft setups, Discord bots, Nitro, game accounts, and much more — all for free!</p>
+  </section>
+
+  <section class="services">
+    <h2>Available Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <i class="fas fa-box-open"></i>
+        <h3>Free Giveaways</h3>
+        <p>Get free maps, configs, and more every week!</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-gamepad"></i>
+        <h3>Game Accounts</h3>
+        <p>Free and legit accounts from trusted sources.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-server"></i>
+        <h3>Minecraft Setups</h3>
+        <p>Fully ready server setups and plugins.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-cubes"></i>
+        <h3>Models & Scripts</h3>
+        <p>Exclusive 3D models, premium scripts, and tools.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-discord"></i>
+        <h3>Discord Templates</h3>
+        <p>Get pro server templates & dashboard-ready bots.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-gift"></i>
+        <h3>Rewards & Drops</h3>
+        <p>Join events to earn custom rewards and prizes!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Join our Discord for support & updates:</p>
+    <a href="https://discord.gg/7p7EfZCu6C" class="dc-link"><i class="fab fa-discord"></i> Join Freeverse Discord</a>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

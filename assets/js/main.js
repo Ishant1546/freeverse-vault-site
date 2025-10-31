@@ -16,3 +16,11 @@ async function loadComponent(id, file) {
 
 loadComponent('header', 'header.html');
 loadComponent('footer', 'footer.html');
+
+document.getElementById('light-toggle').addEventListener('click', () => {
+  document.body.style.filter = 'brightness(1.2)';
+});
+
+document.getElementById('dark-toggle').addEventListener('click', () => {
+  document.body.style.filter = 'brightness(0.7)';
+});
